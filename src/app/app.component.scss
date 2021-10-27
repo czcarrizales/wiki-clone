@@ -1,0 +1,27 @@
+html, body {
+    overflow: hidden;
+}
+
+mat-sidenav-container {
+    height: 100%;
+}
+
+mat-sidenav, mat-sidenav-content {
+    padding: 16px;
+}
+
+mat-sidenav {
+    background-color: #F6F6F6;
+    font-size: 14px;
+    width: 200px;
+}
+
+mat-grid-tile {
+    background-color: #F5FDFA;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+ul {
+    padding-left: 20px;
+}

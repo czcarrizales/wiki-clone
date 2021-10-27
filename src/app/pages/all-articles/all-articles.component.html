@@ -1,0 +1,11 @@
+<div>
+    <h1>All Articles</h1>
+    <ul *ngFor='let article of articles'>
+        <li><a href="#" [routerLink]="['/articles', article._id]" (click)="$event.preventDefault()">
+            {{article.title}}
+        </a></li>
+        <button (click)="deleteArticle(article._id)">Delete</button>
+        <button [routerLink]="['/articles', article._id, 'edit-article']">Edit</button>
+    </ul>
+    <button routerLink='/'>Go Back</button>
+</div>

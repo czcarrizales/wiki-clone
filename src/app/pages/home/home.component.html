@@ -1,0 +1,104 @@
+<mat-sidenav-container>
+  <mat-sidenav [(opened)]="opened">
+    <div>
+      <h1>Wikipedia</h1>
+      <ul>
+        <li><a href="#">Main Page</a></li>
+        <li><a href="#">Contents</a></li>
+        <li><a href="#">Current Events</a></li>
+        <li><a href="#">Random Article</a></li>
+        <li><a href="#">About Wikipedia</a></li>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="#">Donate</a></li>
+      </ul>
+    </div>
+    <div>
+      Contribute
+      <ul>
+        <li><a href="#">Help</a></li>
+        <li><a href="#">Learn to edit</a></li>
+        <li><a href="#">Community portal</a></li>
+        <li><a href="#">Recent changes</a></li>
+        <li><a href="#">Upload file</a></li>
+      </ul>
+    </div>
+    <div>
+      Tools
+      <ul>
+        <li><a href="#">What links here</a></li>
+        <li><a href="#">Related changes</a></li>
+        <li><a href="#">Special pages</a></li>
+        <li><a href="#">Permanent link</a></li>
+        <li><a href="#">Page information</a></li>
+        <li><a href="#">Wikidata item</a></li>
+      </ul>
+    </div>
+
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <button (click)="opened=!opened">Sidebar</button>
+    <button routerLink='/all-articles'>All Articles</button>
+    <button routerLink='/new-article'>New Article</button>
+
+    <mat-grid-list cols="2" rowHeight="300px">
+      <mat-grid-tile>
+        <mat-card>
+          <mat-card-title>
+            <h2>Today's Featured Article</h2>
+          </mat-card-title>
+          <mat-card-content>
+            United States v. Washington was a case heard in the U.S. District Court for the Western District of
+            Washington and the U.S. Ninth Circuit Court of Appeals. It reaffirmed the right of American Indian tribes in
+            the State of Washington to act with the state as co-managers of salmon and other fish in line with treaties
+            signed by the U.S. with the tribes. The tribes of Washington had ceded their land, but reserved the right to
+            fish using traditional methods (example pictured), including at traditional locations off the designated
+            reservations.
+          </mat-card-content>
+        </mat-card>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <mat-card>
+          <mat-card-title>
+            <h2>In the news</h2>
+          </mat-card-title>
+          <mat-card-content>
+            <ul>
+              <li>Test One</li>
+              <li>Test Two</li>
+              <li>Test Three</li>
+              <li>Test Four</li>
+              <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non dolor consequatur ipsum omnis ut labore
+                impedit, consequuntur neque voluptates ullam, nemo iure suscipit fugit. Atque commodi fuga veritatis
+                cumque odit!</li>
+            </ul>
+          </mat-card-content>
+        </mat-card>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <mat-card>
+          <mat-card-title>
+            <h2>Did you know...</h2>
+          </mat-card-title>
+          <mat-card-content>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis sapiente architecto harum dolore
+            explicabo necessitatibus aliquid ratione? Facilis harum nulla dolores architecto, error repellendus iusto,
+            accusamus, dignissimos aperiam exercitationem provident?
+          </mat-card-content>
+        </mat-card>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <mat-card>
+          <mat-card-title>
+            <h2>On this day</h2>
+          </mat-card-title>
+          <mat-card-content>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque dolore, nesciunt illo beatae doloremque sint
+            provident placeat saepe porro minus? Exercitationem qui maiores, optio quod quia minus sed corporis
+            expedita?
+          </mat-card-content>
+        </mat-card>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+<router-outlet></router-outlet>
